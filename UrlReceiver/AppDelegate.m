@@ -22,7 +22,7 @@
   [self setupWebRoutes];
   
   [self.webServer startWithOptions:@{
-                                     GCDWebServerOption_AutomaticallySuspendInBackground: @NO,
+                                     GCDWebServerOption_AutomaticallySuspendInBackground: @YES,
                                      GCDWebServerOption_Port: @8080
                                      }
                              error:nil];
